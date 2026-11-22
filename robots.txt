@@ -1,0 +1,6 @@
+# Everything on this host may be crawled. This file exists to point crawlers at the sitemap:
+# robots.txt is only read at the host root, and the portfolio lives one level down.
+User-agent: *
+Allow: /
+
+Sitemap: https://lisayinyy.github.io/floating_island/sitemap.xml
