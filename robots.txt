@@ -1,6 +1,15 @@
-# Everything on this host may be crawled. This file exists to point crawlers at the sitemap:
+# The portfolio may be crawled. This file exists to point crawlers at its sitemap:
 # robots.txt is only read at the host root, and the portfolio lives one level down.
+#
+# /Programming-Monitor/ is a live working site shared by link and is not to be listed. Its page
+# carries a robots noindex mark, which a crawler sees only if it may fetch the page, so the page
+# itself is not closed here. Its data files cannot carry that mark and are closed instead.
 User-agent: *
 Allow: /
+Disallow: /Programming-Monitor/data/
+Disallow: /Programming-Monitor/changelog/
+Disallow: /Programming-Monitor/archive/
+Disallow: /Programming-Monitor/assets/
+Disallow: /Programming-Monitor/fields.csv
 
 Sitemap: https://lisayinyy.github.io/floating_island/sitemap.xml
